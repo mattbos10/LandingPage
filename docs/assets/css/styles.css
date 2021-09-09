@@ -118,6 +118,10 @@ header nav{
 header nav li{
 	margin: 0 15px;
 }
+header nav li:hover{
+	color: red;
+	transform: scale(1.2);
+}
 
 header nav li:first-child{
 	margin-left: 0;	
@@ -130,8 +134,13 @@ header nav li:last-child{
 #logo {
 	width: 10%;
 	height: auto;
+	position: fixed;
+	z-index: -1;
 }
 
+#logo:hover {
+	transform: scale(1.5);
+}
 
 
 @media (max-width: 1000px){
@@ -199,7 +208,9 @@ header nav li:last-child{
 .hero a.btn{
 	padding: 20px 46px;
 }
-
+.hero a.btn:hover{
+	transform: scale(1.5);
+}
 @media (max-width: 800px){
 
 	.hero{
@@ -241,11 +252,15 @@ header nav li:last-child{
 .our-work .grid li.small{
 	flex-basis: 39%;
 }
-
+.our-work .grid li.small:hover{
+	transform: scale(1.2);
+}
 .our-work .grid li.large{
 	flex-basis: 60%;
 }
-
+.our-work .grid li.large:hover{
+	transform: scale(1.2);
+}
 
 @media (max-width: 1000px){
 
@@ -273,6 +288,10 @@ header nav li:last-child{
     font-size: 50px;
     color: red;
     margin-bottom: 25px;
+}
+
+i:hover{
+	transform: scale(1.8);
 }
 
 .features .grid li h4{
